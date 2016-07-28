@@ -1,5 +1,7 @@
 package com.epam.tests;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
@@ -28,23 +30,24 @@ public class GmailTest {
 	@Test
 	public void spamTest() throws InterruptedException{
 		WebDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		EnterEmailPage eep = new EnterEmailPage(driver);
 		eep.openPage(URL);
 		EnterPasswordPage epp = eep.emailEnter(userName01);
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		InboxMenuPage imp = epp.passwordEnter(userPassword01);	
-		Thread.sleep(4000);
+//		Thread.sleep(4000);
 		NewMessagePage nmp = imp.createNewMessage();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		AfterSendMessagePage asmbp = nmp.writeNewMessage(userName02+domainName,sbj+userName02,messageText);
 		SignOutPage sop = asmbp.signOut();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		EnterEmailPage eep2 = sop.logOff();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		EnterPasswordPage epp2= eep2.emailEnter(userName02);
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		InboxMenuPage imp2 = epp2.passwordEnter(userPassword02);
-		Thread.sleep(4000);
+//		Thread.sleep(4000);
 		OpenMailPage omp = imp2.openInboxMail();
 		omp.sendToSpum();
 	}

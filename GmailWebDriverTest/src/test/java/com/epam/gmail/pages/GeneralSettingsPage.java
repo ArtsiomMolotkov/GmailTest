@@ -5,20 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OpenMailPage {
-	
+public class GeneralSettingsPage {
 	private WebDriver driver;
-	
-	public OpenMailPage(WebDriver driver){
+		
+	public GeneralSettingsPage(WebDriver driver){
 		this.driver=driver;
 		PageFactory.initElements(driver, this);	
 	}
 	
-	@FindBy(xpath="//div[@aria-label='В спам!']")
-	private WebElement spamButton;
-	
-	public void sendToSpum(){		
-		spamButton.click();
-	}
-
 }

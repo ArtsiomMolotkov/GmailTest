@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.epam.tests.GmailTest;
+import com.epam.tests.SpamTest;
 
 public class EnterPasswordPage {
 	
@@ -31,9 +31,9 @@ public class EnterPasswordPage {
 	public InboxMenuPage passwordEnter(String password){
 		
 		inputPassword.sendKeys(password);
-		if (GmailTest.StaySignedButton==false){
+		if (SpamTest.StaySignedButton==false){
 			staySignedRadioButton.click();
-			GmailTest.StaySignedButton=true;
+			SpamTest.StaySignedButton=true;
 		}
 		signInButton.click();
 		return new InboxMenuPage(this.driver);

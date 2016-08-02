@@ -31,99 +31,50 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">49.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">28.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.epam.tests.GmailTest</td><td><a href="#m1"><b>spamTest</b>  </a></td><td class="numi">1</td><td>1469705614467</td><td class="numi">49140</td></tr>
+<tr class="failedodd"><td rowspan="1">com.epam.tests.ForwardTest</td><td><a href="#m1"><b>forwardTest</b>  </a></td><td class="numi">1</td><td>1470127937785</td><td class="numi">15145</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.epam.tests.GmailTest:spamTest</h2>
+<h2 id="m1">com.epam.tests.ForwardTest:forwardTest</h2>
 <div style="padding-left:3em">
-<p>Error communicating with the remote browser. It may have died.
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[class=&apos;J-N-Jz&apos;]&quot;}
+Command duration or timeout: 6.48 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;EPBYMINW2702&apos;, ip: &apos;10.6.103.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5fa88a0b-5664-4dee-90e0-80943923a02a</p>
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-<br/>at com.sun.proxy.$Proxy5.click(Unknown Source)
-<br/>at com.epam.gmail.pages.OpenMailPage.sendToSpum(OpenMailPage.java:21)
-<br/>at com.epam.tests.GmailTest.spamTest(GmailTest.java:52)
+Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
+*** Element info: {Using=xpath, value=//div[class=&apos;J-N-Jz&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at com.epam.gmail.pages.AfterSettingsClickPage.openGeneralSettings(AfterSettingsClickPage.java:21)
+<br/>at com.epam.tests.ForwardTest.forwardTest(ForwardTest.java:57)
 <br/>25 lines not shown
-<p>Caused by Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect</p>
-org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
-<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-<br/>at com.sun.proxy.$Proxy5.click(Unknown Source)
-<br/>at com.epam.gmail.pages.OpenMailPage.sendToSpum(OpenMailPage.java:21)
-<br/>at com.epam.tests.GmailTest.spamTest(GmailTest.java:52)
-<br/>25 lines not shown
-<p>Caused by Connection refused: connect</p>
-java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-<br/>at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-<br/>at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-<br/>at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-<br/>at java.net.PlainSocketImpl.connect(Unknown Source)
-<br/>at java.net.SocksSocketImpl.connect(Unknown Source)
-<br/>at java.net.Socket.connect(Unknown Source)
-<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
-<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-<br/>at com.sun.proxy.$Proxy5.click(Unknown Source)
-<br/>at com.epam.gmail.pages.OpenMailPage.sendToSpum(OpenMailPage.java:21)
-<br/>at com.epam.tests.GmailTest.spamTest(GmailTest.java:52)
-<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[class=&apos;J-N-Jz&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;EPBYMINW2702&apos;, ip: &apos;10.6.103.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+<br/>1 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

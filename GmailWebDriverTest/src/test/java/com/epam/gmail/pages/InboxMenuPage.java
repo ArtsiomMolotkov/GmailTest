@@ -9,11 +9,16 @@ public class InboxMenuPage {
 	
 	private WebDriver driver;
 	
-	@FindBy(xpath="//div[@class='T-I J-J5-Ji T-I-KE L3']")
+	
+	@FindBy(xpath = "//div[contains(text(), 'НАПИСАТЬ')]")
 	private WebElement createNewMessageButton;
 	
 	@FindBy(xpath="//div[@class='UI']")
 	private WebElement openInboxMailButton;
+		
+//	@FindBy(xpath="//div[@aria-label='Настройки']/div")
+	@FindBy(xpath="//div[@class='aos T-I-J3 J-J5-Ji']")
+	private WebElement settingsButton;
 	
 	public InboxMenuPage(WebDriver driver){
 		this.driver=driver;
@@ -25,6 +30,12 @@ public class InboxMenuPage {
 		createNewMessageButton.click();
 		return new NewMessagePage(this.driver);
 	}
+	
+	public AfterSettingsClickPage changeSettings(){		
+		settingsButton.click();
+		return new AfterSettingsClickPage(this.driver);
+	}
+	
 	
 	public OpenMailPage openInboxMail(){		
 		openInboxMailButton.click();

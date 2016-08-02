@@ -1,0 +1,5 @@
+package com.epam.gmail.properties;
+
+public enum Account {
+	URL,USERNAME01,USERNAME02,USERPASSWORD01,USERPASSWORD02,USEREMAIL01,USEREMAIL02;
+}

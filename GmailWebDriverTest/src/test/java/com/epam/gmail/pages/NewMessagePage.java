@@ -9,13 +9,13 @@ public class NewMessagePage {
 	
 	private WebDriver driver;
 	
-	@FindBy(xpath="//textarea[@id=':8j']")
+	@FindBy(xpath="//textarea[@name='to']")
 	private WebElement inputTo;
 	
-	@FindBy(xpath="//input[@id=':83']")
+	@FindBy(xpath="//input[@name='subjectbox']")
 	private WebElement inputSubject;
 	
-	@FindBy(xpath="//div[@id=':98']")
+	@FindBy(xpath="//div[@aria-label='Тело письма']")
 	private WebElement inputMessage;
 	
 	@FindBy(xpath="//div[@id=':7t']")

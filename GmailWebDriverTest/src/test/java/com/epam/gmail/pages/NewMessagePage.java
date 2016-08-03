@@ -1,11 +1,15 @@
 package com.epam.gmail.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class NewMessagePage {
+	
+	private final static Logger log = LogManager.getLogger("eventLogger");
 	
 	private WebDriver driver;
 	
@@ -31,12 +35,16 @@ public class NewMessagePage {
 		inputTo.clear();
 		inputTo.sendKeys(to);
 		inputTo.submit();
+		log.info("Filling the TO form with values: "+to);
 		inputSubject.clear();
 		inputSubject.sendKeys(subject);
 		inputSubject.submit();
+		log.info("Filling the SUBJECT form with values: "+subject);
 		inputMessage.click();
 		inputMessage.sendKeys(message_text);
+		log.info("Filling the MESSAGE form with values: "+message_text);
 		sendButton.click();
+		log.info("Clicking send button");
 		return new AfterSendMessagePage(this.driver);
 	}
 	

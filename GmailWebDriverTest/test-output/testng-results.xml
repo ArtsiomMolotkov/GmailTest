@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28676" started-at="2016-08-02T08:52:04Z" finished-at="2016-08-02T08:52:33Z">
+  <suite name="Default suite" duration-ms="34289" started-at="2016-08-03T07:11:02Z" finished-at="2016-08-03T07:11:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28676" started-at="2016-08-02T08:52:04Z" finished-at="2016-08-02T08:52:33Z">
-      <class name="com.epam.tests.ForwardTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.tests.ForwardTest@224edc67]" name="setUp" is-config="true" duration-ms="13422" started-at="2016-08-02T11:52:04Z" finished-at="2016-08-02T11:52:17Z">
+    <test name="Default test" duration-ms="34289" started-at="2016-08-03T07:11:02Z" finished-at="2016-08-03T07:11:37Z">
+      <class name="com.epam.tests.SpamTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.tests.SpamTest@59fa1d9b]" name="setUp" is-config="true" duration-ms="7021" started-at="2016-08-03T10:11:03Z" finished-at="2016-08-03T10:11:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="forwardTest()[pri:0, instance:com.epam.tests.ForwardTest@224edc67]" name="forwardTest" duration-ms="15145" started-at="2016-08-02T11:52:17Z" finished-at="2016-08-02T11:52:32Z">
+        <test-method status="FAIL" signature="spamTest()[pri:0, instance:com.epam.tests.SpamTest@59fa1d9b]" name="spamTest" duration-ms="26487" started-at="2016-08-03T10:11:10Z" finished-at="2016-08-03T10:11:36Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[class='J-N-Jz']"}
-Command duration or timeout: 6.48 seconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='В спам!']"}
+Command duration or timeout: 6.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'EPBYMINW2702', ip: '10.6.103.45', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
-*** Element info: {Using=xpath, value=//div[class='J-N-Jz']}]]>
+Session ID: 28a737d4-dc4a-4355-8ce5-bd0d8931507b
+*** Element info: {Using=xpath, value=//div[@aria-label='В спам!']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[class='J-N-Jz']"}
-Command duration or timeout: 6.48 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='В спам!']"}
+Command duration or timeout: 6.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'EPBYMINW2702', ip: '10.6.103.45', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
-*** Element info: {Using=xpath, value=//div[class='J-N-Jz']}
+Session ID: 28a737d4-dc4a-4355-8ce5-bd0d8931507b
+*** Element info: {Using=xpath, value=//div[@aria-label='В спам!']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -47,9 +47,9 @@ Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.epam.gmail.pages.AfterSettingsClickPage.openGeneralSettings(AfterSettingsClickPage.java:21)
-	at com.epam.tests.ForwardTest.forwardTest(ForwardTest.java:57)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.epam.gmail.pages.OpenMailPage.sendToSpum(OpenMailPage.java:25)
+	at com.epam.tests.SpamTest.spamTest(SpamTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -74,24 +74,24 @@ Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[class='J-N-Jz']"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='В спам!']"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'EPBYMINW2702', ip: '10.6.103.45', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8633125002781538849webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8633125002781538849webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forwardTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.tests.ForwardTest@224edc67]" name="tearDown" is-config="true" duration-ms="2" started-at="2016-08-02T11:52:33Z" finished-at="2016-08-02T11:52:33Z">
+        </test-method> <!-- spamTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.tests.SpamTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="744" started-at="2016-08-03T10:11:36Z" finished-at="2016-08-03T10:11:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.epam.tests.ForwardTest -->
+      </class> <!-- com.epam.tests.SpamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

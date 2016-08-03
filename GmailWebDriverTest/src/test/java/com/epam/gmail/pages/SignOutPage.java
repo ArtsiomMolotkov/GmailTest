@@ -1,5 +1,7 @@
 package com.epam.gmail.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignOutPage {
+	
+	private final static Logger log = LogManager.getLogger("eventLogger");
 	
 	private WebDriver driver;
 	
@@ -21,6 +25,7 @@ public class SignOutPage {
 	
 	public EnterEmailPage logOff(){
 		logOffButton.click();
+		log.info("Clicking logOff button");
 		return new EnterEmailPage(this.driver);	
 	}
 

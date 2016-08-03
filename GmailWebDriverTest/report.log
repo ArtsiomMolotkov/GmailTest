@@ -1,0 +1,21 @@
+2016-54-03 09:54:44 [main] INFO  (EnterEmailPage.java : 31) - Open pagehttp://www.gmail.com
+2016-54-03 09:54:44 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-54-03 09:54:46 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-54-03 09:54:49 [main] INFO  (InboxMenuPage.java : 41) - Clicking settings button
+2016-56-03 09:56:26 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-56-03 09:56:26 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-56-03 09:56:28 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-56-03 09:56:31 [main] INFO  (InboxMenuPage.java : 41) - Clicking settings button
+2016-11-03 10:11:11 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-11-03 10:11:12 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser01
+2016-11-03 10:11:13 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser01pass
+2016-11-03 10:11:17 [main] INFO  (InboxMenuPage.java : 34) - New message creating
+2016-11-03 10:11:20 [main] INFO  (NewMessagePage.java : 38) - Filling the TO form with values: testepamuser02@gmail.com
+2016-11-03 10:11:21 [main] INFO  (NewMessagePage.java : 42) - Filling the SUBJECT form with values: To my closest friend testepamuser02
+2016-11-03 10:11:22 [main] INFO  (NewMessagePage.java : 45) - Filling the MESSAGE form with values: How are you?
+2016-11-03 10:11:22 [main] INFO  (NewMessagePage.java : 47) - Clicking send button
+2016-11-03 10:11:22 [main] INFO  (AfterSendMessagePage.java : 28) - Clicking sign out button
+2016-11-03 10:11:23 [main] INFO  (SignOutPage.java : 28) - Clicking logOff button
+2016-11-03 10:11:24 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-11-03 10:11:27 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-11-03 10:11:30 [main] INFO  (InboxMenuPage.java : 48) - Opening inbox mail

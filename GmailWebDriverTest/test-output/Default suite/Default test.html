@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 02 11:52:04 MSK 2016</td>
+<td>Started on:</td><td>Wed Aug 03 10:11:02 MSK 2016</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28676 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34289 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.epam.tests.ForwardTest.forwardTest()'><b>forwardTest</b><br>Test class: com.epam.tests.ForwardTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[class=&apos;J-N-Jz&apos;]&quot;}
-Command duration or timeout: 6.48 seconds
+<td title='com.epam.tests.SpamTest.spamTest()'><b>spamTest</b><br>Test class: com.epam.tests.SpamTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&apos;В спам!&apos;]&quot;}
+Command duration or timeout: 6.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;EPBYMINW2702&apos;, ip: &apos;10.6.103.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
-*** Element info: {Using=xpath, value=//div[class=&apos;J-N-Jz&apos;]}
+Session ID: 28a737d4-dc4a-4355-8ce5-bd0d8931507b
+*** Element info: {Using=xpath, value=//div[@aria-label=&apos;В спам!&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -98,9 +98,9 @@ Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.epam.gmail.pages.AfterSettingsClickPage.openGeneralSettings(AfterSettingsClickPage.java:21)
-	at com.epam.tests.ForwardTest.forwardTest(ForwardTest.java:57)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.epam.gmail.pages.OpenMailPage.sendToSpum(OpenMailPage.java:25)
+	at com.epam.tests.SpamTest.spamTest(SpamTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -125,23 +125,23 @@ Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[class=&apos;J-N-Jz&apos;]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&apos;В спам!&apos;]&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;EPBYMINW2702&apos;, ip: &apos;10.6.103.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-</pre></div><a href='#' onClick='toggleBox("stack-trace722951168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace722951168'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[class=&apos;J-N-Jz&apos;]&quot;}
-Command duration or timeout: 6.48 seconds
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8633125002781538849webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8633125002781538849webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1447353473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1447353473'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&apos;В спам!&apos;]&quot;}
+Command duration or timeout: 6.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;EPBYMINW2702&apos;, ip: &apos;10.6.103.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
-*** Element info: {Using=xpath, value=//div[class=&apos;J-N-Jz&apos;]}
+Session ID: 28a737d4-dc4a-4355-8ce5-bd0d8931507b
+*** Element info: {Using=xpath, value=//div[@aria-label=&apos;В спам!&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -155,9 +155,9 @@ Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.epam.gmail.pages.AfterSettingsClickPage.openGeneralSettings(AfterSettingsClickPage.java:21)
-	at com.epam.tests.ForwardTest.forwardTest(ForwardTest.java:57)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.epam.gmail.pages.OpenMailPage.sendToSpum(OpenMailPage.java:25)
+	at com.epam.tests.SpamTest.spamTest(SpamTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -182,16 +182,16 @@ Session ID: b9c92c13-e6e9-413b-a665-c29c0c01470d
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[class=&apos;J-N-Jz&apos;]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&apos;В спам!&apos;]&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;EPBYMINW2702&apos;, ip: &apos;10.6.103.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8095385548685382164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8633125002781538849webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Artsiom_Molotkov@epam.com/AppData/Local/Temp/anonymous8633125002781538849webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>15</td>
-<td>com.epam.tests.ForwardTest@224edc67</td></tr>
+<td>26</td>
+<td>com.epam.tests.SpamTest@59fa1d9b</td></tr>
 </table><p>
 </body>
 </html>

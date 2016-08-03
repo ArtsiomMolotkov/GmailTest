@@ -1,5 +1,7 @@
 package com.epam.gmail.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +11,8 @@ public class OpenMailPage {
 	/**
 	 * You've created one separated class only for one click() action?
 	 */
+	
+	private final static Logger log = LogManager.getLogger("eventLogger");
 	
 	private WebDriver driver;
 	
@@ -24,8 +28,9 @@ public class OpenMailPage {
 	 * Rename method to sendToSpam
 	 */
 	
-	public void sendToSpum(){		
+	public void sendToSpum(){
 		spamButton.click();
+		log.info("Clicking TO SPUM button");
 	}
 
 }

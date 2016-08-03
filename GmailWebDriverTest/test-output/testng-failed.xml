@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.epam.tests.ForwardTest">
+      <class name="com.epam.tests.SpamTest">
         <methods>
-          <include name="forwardTest"/>
+          <include name="spamTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.epam.tests.ForwardTest -->
+      </class> <!-- com.epam.tests.SpamTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

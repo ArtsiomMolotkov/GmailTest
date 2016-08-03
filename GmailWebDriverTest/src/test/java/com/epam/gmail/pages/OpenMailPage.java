@@ -6,6 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class OpenMailPage {
+	/**
+	 * You've created one separated class only for one click() action?
+	 */
 	
 	private WebDriver driver;
 	
@@ -16,6 +19,10 @@ public class OpenMailPage {
 	
 	@FindBy(xpath="//div[@aria-label='В спам!']")
 	private WebElement spamButton;
+
+	/**
+	 * Rename method to sendToSpam
+	 */
 	
 	public void sendToSpum(){		
 		spamButton.click();

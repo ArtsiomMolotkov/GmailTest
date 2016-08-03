@@ -26,6 +26,10 @@ public class NewMessagePage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);	
 	}
+
+	/**
+	 * Rename message_test to messageTest
+     */
 	
 	public AfterSendMessagePage writeNewMessage(String to,String subject, String message_text) throws InterruptedException{
 		inputTo.clear();

@@ -7,6 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GeneralSettingsPage {
 	private WebDriver driver;
+
+	/**
+	 * Empty class wich doing nothing
+	 * @param driver
+     */
 		
 	public GeneralSettingsPage(WebDriver driver){
 		this.driver=driver;

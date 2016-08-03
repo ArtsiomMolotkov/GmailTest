@@ -15,6 +15,9 @@ public class InboxMenuPage {
 	
 	@FindBy(xpath="//div[@class='UI']")
 	private WebElement openInboxMailButton;
+	/**
+	 * Clean your code from commented parts
+	 */
 		
 //	@FindBy(xpath="//div[@aria-label='Настройки']/div")
 	@FindBy(xpath="//div[@class='aos T-I-J3 J-J5-Ji']")

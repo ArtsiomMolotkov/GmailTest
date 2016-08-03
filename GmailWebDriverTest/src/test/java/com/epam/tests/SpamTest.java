@@ -3,10 +3,7 @@ package com.epam.tests;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
 
 import com.epam.gmail.pages.AfterSendMessagePage;
 import com.epam.gmail.pages.EnterEmailPage;
@@ -18,13 +15,18 @@ import com.epam.gmail.pages.SignOutPage;
 import com.epam.gmail.properties.Account;
 import com.epam.gmail.properties.PropertyProvider;
 import com.epam.gmail.driver.WebDriverProvider;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 
 public class SpamTest {
 
 	protected WebDriver driver;
 	protected PropertyProvider property = PropertyProvider.getInstance();
-	
+	/**
+	 * Constant variable names shoud be written in UPPER CASE!!!!
+	 */
 	
 	public final String URL = property.getValue(Account.URL);
 	public final String userName01=property.getValue(Account.USERNAME01);
@@ -33,7 +35,10 @@ public class SpamTest {
 	public final String userPassword02=property.getValue(Account.USERPASSWORD02);
 	public final String userEmail01=property.getValue(Account.USEREMAIL01);
 	public final String userEmail02=property.getValue(Account.USEREMAIL02);
-	
+	/**
+	 * Wrong access modificators.
+	 * If it's a constant Strings use private final static
+	 */
 	public String sbj="To my closest friend ";
 	public String messageText="How are you?";
 	public static boolean StaySignedButton=false;

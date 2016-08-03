@@ -26,7 +26,11 @@ public class EnterPasswordPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);	
 	}
-	
+
+	/**
+	 * Why do you keep StaySignedButton variable in test class if it used only here?
+	 * Rework
+     */
 	
 	public InboxMenuPage passwordEnter(String password){
 		

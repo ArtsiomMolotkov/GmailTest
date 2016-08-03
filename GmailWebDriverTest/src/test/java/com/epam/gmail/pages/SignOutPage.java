@@ -7,9 +7,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignOutPage {
+	/**
+	 * Again full class only for one click() action
+	 */
 	
 	private WebDriver driver;
-	
+
 	@FindBy(id="gb_71")
 	private WebElement logOffButton;
 

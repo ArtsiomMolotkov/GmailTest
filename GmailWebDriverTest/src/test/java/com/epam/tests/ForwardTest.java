@@ -57,7 +57,10 @@ public class ForwardTest {
 		GeneralSettingsPage generalSettingsPage = afterSettingsClick.openGeneralSettings();
 
 	}
-	
+
+	/**
+	 * Use Debug mode to stop test execution instead of commented parts of code!
+	 */
 	@AfterTest
 	public void tearDown()
 	{

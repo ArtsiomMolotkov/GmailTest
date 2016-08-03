@@ -7,8 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AfterSettingsClickPage {
 	private WebDriver driver;
-	
-//	@FindBy(xpath = "//div[contains(text(),'Настройки')]")
+	/**
+	 * Russian language used in locators
+	 */
+//	@FindBy(xpath = "//div[contains(text(),'?????????')]")
 	@FindBy(xpath = "//div[class='J-N-Jz']")	
 	private WebElement settingsButton1;
 	

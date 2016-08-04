@@ -140,3 +140,10 @@
 2016-46-04 11:46:37 [main] INFO  (GeneralSettingsPage.java : 24) - Opening Forward POP//IMAP page
 2016-46-04 11:46:39 [main] INFO  (ForwardPopImapPage.java : 23) - Clicking add address button
 2016-46-04 11:46:41 [main] INFO  (ForwardPage.java : 26) - Inputing into field address :testepamuser03@gmail.com
+2016-09-04 12:09:15 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-09-04 12:09:15 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-09-04 12:09:17 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-09-04 12:09:17 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-09-04 12:09:22 [main] INFO  (GeneralSettingsPage.java : 24) - Opening Forward POP//IMAP page
+2016-09-04 12:09:23 [main] INFO  (ForwardPopImapPage.java : 23) - Clicking add address button
+2016-09-04 12:09:25 [main] INFO  (ForwardPage.java : 26) - Inputing into field address :testepamuser03@gmail.com

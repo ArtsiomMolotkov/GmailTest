@@ -7,9 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class InboxMenuPage {
+public class InboxMenuPage extends BasePage{
 	
-	private WebDriver driver;
 	private final static Logger log = LogManager.getLogger("eventLogger");
 	
 	
@@ -24,8 +23,7 @@ public class InboxMenuPage {
 	private WebElement settingsButton;
 	
 	public InboxMenuPage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);	
+		super(driver);
 	}
 	
 	
@@ -36,10 +34,16 @@ public class InboxMenuPage {
 		
 	}
 	
-	public AfterSettingsClickPage changeSettings(){		
-		settingsButton.click();
-		log.info("Clicking settings button");
-		return new AfterSettingsClickPage(this.driver);
+//	public AfterSettingsClickPage changeSettings(){		
+//		settingsButton.click();
+//		log.info("Clicking settings button");
+//		return new AfterSettingsClickPage(this.driver);
+//	}
+	
+	public GeneralSettingsPage goToGeneralSettings(String GeneralSettingsURL){
+		this.driver.get(GeneralSettingsURL);
+		log.info("Open general Settings page :"+GeneralSettingsURL);
+		return new  GeneralSettingsPage(this.driver);
 	}
 	
 	

@@ -8,19 +8,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AfterSendMessagePage {
+public class AfterSendMessagePage extends BasePage {
 	
 	private final static Logger log = LogManager.getLogger("eventLogger");
-
-	
-	private WebDriver driver;
 	
 	@FindBy(xpath="//span[@class='gb_3a gbii']")
 	private WebElement signOutButton;
 
 	public AfterSendMessagePage(WebDriver driver){	
-		this.driver=driver;
-		PageFactory.initElements(driver, this);	
+		super(driver);
 	}
 	
 	public SignOutPage signOut(){

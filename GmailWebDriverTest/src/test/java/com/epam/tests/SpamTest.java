@@ -17,33 +17,10 @@ import com.epam.gmail.pages.OpenMailPage;
 import com.epam.gmail.pages.SignOutPage;
 import com.epam.gmail.properties.Account;
 import com.epam.gmail.properties.PropertyProvider;
-import com.epam.gmail.driver.WebDriverProvider;
+import com.epam.gmail.driverProvider.WebDriverProvider;
 
 
-public class SpamTest {
-
-	protected WebDriver driver;
-	protected PropertyProvider property = PropertyProvider.getInstance();
-	
-	
-	public final String URL = property.getValue(Account.URL);
-	public final String userName01=property.getValue(Account.USERNAME01);
-	public final String userName02=property.getValue(Account.USERNAME02);
-	public final String userPassword01=property.getValue(Account.USERPASSWORD01);
-	public final String userPassword02=property.getValue(Account.USERPASSWORD02);
-	public final String userEmail01=property.getValue(Account.USEREMAIL01);
-	public final String userEmail02=property.getValue(Account.USEREMAIL02);
-	
-	public String sbj="To my closest friend ";
-	public String messageText="How are you?";
-	public static boolean StaySignedButton=false;
-	
-	@BeforeTest
-	public void setUp()
-	{
-		driver = WebDriverProvider.getInstance();
-		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
-	}
+public class SpamTest extends BaseTest {
 	
 	@Test
 	public void spamTest() throws InterruptedException{
@@ -59,13 +36,5 @@ public class SpamTest {
 		InboxMenuPage inboxMenuPage2 = enterPasswordPage2.passwordEnter(userPassword02);
 		OpenMailPage openMailPage = inboxMenuPage2.openInboxMail();
 		openMailPage.sendToSpum();
-	}
-	
-	@AfterTest
-	public void tearDown()
-	{
-		WebDriverProvider.close();
-	}
-	
-	
+	}		
 }

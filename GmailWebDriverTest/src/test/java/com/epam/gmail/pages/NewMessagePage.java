@@ -7,12 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class NewMessagePage {
+public class NewMessagePage extends BasePage{
 	
 	private final static Logger log = LogManager.getLogger("eventLogger");
-	
-	private WebDriver driver;
-	
+		
 	@FindBy(xpath="//textarea[@name='to']")
 	private WebElement inputTo;
 	
@@ -26,9 +24,8 @@ public class NewMessagePage {
 	private WebElement sendButton;
 	
 	
-	public NewMessagePage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);	
+	public NewMessagePage(WebDriver driver){	
+		super(driver);
 	}
 	
 	public AfterSendMessagePage writeNewMessage(String to,String subject, String message_text) throws InterruptedException{

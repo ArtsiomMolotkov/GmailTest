@@ -8,14 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.epam.tests.SpamTest;
+import com.epam.tests.BaseTest;
 
-public class EnterPasswordPage {
+public class EnterPasswordPage extends BasePage {
 	
 	private final static Logger log = LogManager.getLogger("eventLogger");
-
-	
-	private WebDriver driver;
 	
 	@FindBy(id="Passwd")
 	private WebElement inputPassword;
@@ -28,17 +25,15 @@ public class EnterPasswordPage {
 	
 	
 	public EnterPasswordPage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);	
+		super(driver);
 	}
-	
 	
 	public InboxMenuPage passwordEnter(String password){
 		
 		inputPassword.sendKeys(password);
-		if (SpamTest.StaySignedButton==false){
+		if (BaseTest.StaySignedButton==false){
 			staySignedRadioButton.click();
-			SpamTest.StaySignedButton=true;
+			BaseTest.StaySignedButton=true;
 		}
 		signInButton.click();
 		log.info("Entering with password :"+password);

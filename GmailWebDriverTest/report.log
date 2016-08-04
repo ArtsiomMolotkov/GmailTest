@@ -19,3 +19,124 @@
 2016-11-03 10:11:24 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
 2016-11-03 10:11:27 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
 2016-11-03 10:11:30 [main] INFO  (InboxMenuPage.java : 48) - Opening inbox mail
+2016-35-03 10:35:19 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-35-03 10:35:19 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-35-03 10:35:20 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-35-03 10:35:24 [main] INFO  (InboxMenuPage.java : 41) - Clicking settings button
+2016-47-03 10:47:06 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-47-03 10:47:06 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-47-03 10:47:08 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-47-03 10:47:08 [main] INFO  (InboxMenuPage.java : 47) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-03-03 11:03:13 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-03-03 11:03:14 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-03-03 11:03:16 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-03-03 11:03:16 [main] INFO  (InboxMenuPage.java : 47) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-03-03 11:03:22 [main] INFO  (GeneralSettingsPage.java : 26) - Opening Forward POP//IMAP page
+2016-29-03 11:29:00 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-29-03 11:29:00 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-29-03 11:29:02 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-29-03 11:29:02 [main] INFO  (InboxMenuPage.java : 47) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-29-03 11:29:08 [main] INFO  (GeneralSettingsPage.java : 26) - Opening Forward POP//IMAP page
+2016-30-03 11:30:34 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-30-03 11:30:34 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-30-03 11:30:36 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-30-03 11:30:36 [main] INFO  (InboxMenuPage.java : 47) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-30-03 11:30:40 [main] INFO  (GeneralSettingsPage.java : 26) - Opening Forward POP//IMAP page
+2016-41-03 11:41:11 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-41-03 11:41:11 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-41-03 11:41:13 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-41-03 11:41:13 [main] INFO  (InboxMenuPage.java : 47) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-41-03 11:41:17 [main] INFO  (GeneralSettingsPage.java : 26) - Opening Forward POP//IMAP page
+2016-41-03 11:41:19 [main] INFO  (ForwardPopImapPage.java : 26) - Clicking add address button
+2016-41-03 11:41:19 [main] INFO  (ForwardPage.java : 27) - Inputing into field address :Some text
+2016-57-03 11:57:01 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-57-03 11:57:02 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-57-03 11:57:03 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-57-03 11:57:03 [main] INFO  (InboxMenuPage.java : 47) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-57-03 11:57:08 [main] INFO  (GeneralSettingsPage.java : 26) - Opening Forward POP//IMAP page
+2016-57-03 11:57:09 [main] INFO  (ForwardPopImapPage.java : 26) - Clicking add address button
+2016-57-03 11:57:09 [main] INFO  (ForwardPage.java : 27) - Inputing into field address :testepamuser03
+2016-01-03 12:01:37 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-01-03 12:01:37 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser02
+2016-01-03 12:01:39 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser02pass
+2016-01-03 12:01:39 [main] INFO  (InboxMenuPage.java : 47) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-01-03 12:01:45 [main] INFO  (GeneralSettingsPage.java : 26) - Opening Forward POP//IMAP page
+2016-01-03 12:01:46 [main] INFO  (ForwardPopImapPage.java : 26) - Clicking add address button
+2016-01-03 12:01:47 [main] INFO  (ForwardPage.java : 29) - Inputing into field address :testepamuser03@gmail.com
+2016-30-03 14:30:40 [main] INFO  (EnterEmailPage.java : 40) - Open page :http://www.gmail.com
+2016-30-03 14:30:40 [main] INFO  (EnterEmailPage.java : 46) - Entering with email :testepamuser01
+2016-30-03 14:30:42 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser01pass
+2016-44-03 14:44:59 [main] INFO  (EnterEmailPage.java : 33) - Open page :http://www.gmail.com
+2016-45-03 14:45:00 [main] INFO  (EnterEmailPage.java : 39) - Entering with email :testepamuser01
+2016-45-03 14:45:01 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser01pass
+2016-45-03 14:45:07 [main] INFO  (InboxMenuPage.java : 35) - New message creating
+2016-46-03 14:46:16 [main] INFO  (EnterEmailPage.java : 33) - Open page :http://www.gmail.com
+2016-46-03 14:46:16 [main] INFO  (EnterEmailPage.java : 39) - Entering with email :testepamuser01
+2016-46-03 14:46:18 [main] INFO  (EnterPasswordPage.java : 44) - Entering with password :testepamuser01pass
+2016-46-03 14:46:22 [main] INFO  (InboxMenuPage.java : 34) - New message creating
+2016-46-03 14:46:26 [main] INFO  (NewMessagePage.java : 39) - Filling the TO form with values: testepamuser02@gmail.com
+2016-46-03 14:46:26 [main] INFO  (NewMessagePage.java : 43) - Filling the SUBJECT form with values: To my closest friend testepamuser02
+2016-46-03 14:46:27 [main] INFO  (NewMessagePage.java : 46) - Filling the MESSAGE form with values: How are you?
+2016-46-03 14:46:27 [main] INFO  (NewMessagePage.java : 48) - Clicking send button
+2016-02-03 16:02:12 [main] INFO  (EnterEmailPage.java : 31) - Open page :http://www.gmail.com
+2016-02-03 16:02:12 [main] INFO  (EnterEmailPage.java : 37) - Entering with email :testepamuser01
+2016-02-03 16:02:15 [main] INFO  (EnterPasswordPage.java : 43) - Entering with password :testepamuser01pass
+2016-04-03 16:04:41 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-04-03 16:04:42 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-04-03 16:04:44 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-04-03 16:04:44 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-12-03 16:12:50 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-12-03 16:12:50 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-15-03 16:15:14 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-15-03 16:15:15 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-15-03 16:15:59 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-16-03 16:16:01 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-16-03 16:16:02 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-16-03 16:16:02 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-16-03 16:16:06 [main] INFO  (GeneralSettingsPage.java : 24) - Opening Forward POP//IMAP page
+2016-16-03 16:16:08 [main] INFO  (ForwardPopImapPage.java : 23) - Clicking add address button
+2016-16-03 16:16:09 [main] INFO  (ForwardPage.java : 26) - Inputing into field address :testepamuser03@gmail.com
+2016-23-03 16:23:08 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-23-03 16:23:09 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-23-03 16:23:10 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-23-03 16:23:10 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-26-03 16:26:09 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-26-03 16:26:10 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser01
+2016-26-03 16:26:12 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser01pass
+2016-43-04 10:43:13 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-43-04 10:43:14 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-43-04 10:43:16 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-43-04 10:43:16 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-43-04 10:43:21 [main] INFO  (GeneralSettingsPage.java : 24) - Opening Forward POP//IMAP page
+2016-43-04 10:43:23 [main] INFO  (ForwardPopImapPage.java : 23) - Clicking add address button
+2016-43-04 10:43:23 [main] INFO  (ForwardPage.java : 26) - Inputing into field address :testepamuser03@gmail.com
+2016-51-04 10:51:53 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-51-04 10:51:53 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-51-04 10:51:55 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-51-04 10:51:55 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-51-04 10:51:59 [main] INFO  (GeneralSettingsPage.java : 24) - Opening Forward POP//IMAP page
+2016-52-04 10:52:00 [main] INFO  (ForwardPopImapPage.java : 23) - Clicking add address button
+2016-52-04 10:52:02 [main] INFO  (ForwardPage.java : 26) - Inputing into field address :testepamuser03@gmail.com
+2016-13-04 11:13:56 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-13-04 11:13:56 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-13-04 11:13:58 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-13-04 11:13:58 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-21-04 11:21:28 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-21-04 11:21:29 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-21-04 11:21:30 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-21-04 11:21:30 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-35-04 11:35:39 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-35-04 11:35:40 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-40-04 11:40:09 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-40-04 11:40:09 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-40-04 11:40:11 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-40-04 11:40:11 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-43-04 11:43:36 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-43-04 11:43:36 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-46-04 11:46:28 [main] INFO  (EnterEmailPage.java : 27) - Open page :http://www.gmail.com
+2016-46-04 11:46:28 [main] INFO  (EnterEmailPage.java : 33) - Entering with email :testepamuser02
+2016-46-04 11:46:30 [main] INFO  (EnterPasswordPage.java : 39) - Entering with password :testepamuser02pass
+2016-46-04 11:46:30 [main] INFO  (InboxMenuPage.java : 45) - Open general Settings page :https://mail.google.com/mail/u/0/#settings/general
+2016-46-04 11:46:37 [main] INFO  (GeneralSettingsPage.java : 24) - Opening Forward POP//IMAP page
+2016-46-04 11:46:39 [main] INFO  (ForwardPopImapPage.java : 23) - Clicking add address button
+2016-46-04 11:46:41 [main] INFO  (ForwardPage.java : 26) - Inputing into field address :testepamuser03@gmail.com

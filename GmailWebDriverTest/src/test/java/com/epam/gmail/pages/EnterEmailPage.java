@@ -8,22 +8,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EnterEmailPage {
+public class EnterEmailPage extends BasePage {
 	
 	private final static Logger log = LogManager.getLogger("eventLogger");
-	
-	private WebDriver driver;
-	
+
 	@FindBy(id="Email")
 	private WebElement inputEmail;
 	
 	@FindBy(id="next")
 	private WebElement nextButton;
-		
+	
 	public EnterEmailPage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-
+		super(driver);
 	}
 	
 	public void openPage(String URL){

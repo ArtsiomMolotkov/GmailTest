@@ -7,15 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OpenMailPage {
+public class OpenMailPage extends BasePage {
 	
 	private final static Logger log = LogManager.getLogger("eventLogger");
-	
-	private WebDriver driver;
-	
+		
 	public OpenMailPage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);	
+		super(driver);
 	}
 	
 	@FindBy(xpath="//div[@aria-label='В спам!']")
